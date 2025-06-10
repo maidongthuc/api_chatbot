@@ -1,5 +1,9 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from flask import Flask, request, jsonify
-from db_connection import connect_to_database
+from src.db_connection import connect_to_database
 from flask_cors import CORS
 
 app = Flask(__name__)
