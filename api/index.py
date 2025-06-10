@@ -18,6 +18,3 @@ def greet():
         return "Database connection successful!"
     else:
         return "Database connection failed!", 500
-    
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5050)
